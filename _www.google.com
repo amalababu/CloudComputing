@@ -1,1 +1,0 @@
-<http.client.HTTPResponse object at 0x7f66b82e5580>
