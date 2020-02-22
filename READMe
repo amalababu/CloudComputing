@@ -1,9 +1,10 @@
 Amala Babu
 UIN: 329007003
-The cloud platform I chose is AWS
-I used Mac OS Catalina for developing the command-line program
-To run the command-line program: python3 access_gateway.py <url>
+The cloud platform: AWS
+I used Mac OS Catalina for developing the command-line program using Python 3
+Command to run the command-line program: python3 access_gateway.py <url> [eg. python3 access_gateway.py www.google.com]
 S3 bucket name: storage-web
-URL of AWS Lambda API Gateway: https://ioqe1193xa.execute-api.us-west-2.amazonaws.com/default/pageStore
+URL of AWS Lambda API Gateway: https://ioqe1193xa.execute-api.us-west-2.amazonaws.com/default/pageStore?url=<url>
 Public DNS of your EC2 instance: ec2-34-221-168-247.us-west-2.compute.amazonaws.com
-Command to run the python code as a non-terminating background process: nohup sudo python3 poll_s3.py &
+The backend program running in EC2 instance is Python Flask application. It is run as a non-terminating background process using
+nohup sudo python3 poll_s3.py &
